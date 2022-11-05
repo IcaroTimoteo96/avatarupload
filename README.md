@@ -1,3 +1,7 @@
+# Resume
+Drag and Drop image in ReactJs;
+This project was challenge requested for a company;
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
