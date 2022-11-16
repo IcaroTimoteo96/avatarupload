@@ -2,13 +2,18 @@ import { makeStyles } from '@mui/styles'
 
 export const useStyles = makeStyles({
 	card: {
-		display: 'flex',
-		marginTop: '142px',
-		marginLeft: '156px',
+		position: 'absolute',
+		top:'50%',
+		left:'50%',
+		margin:'30vh 0 0 -45vh',
 		borderStyle: 'dashed',
 		width: '553px',
 		height: '177px',
 		border: '2px dashed #C7CDD3',
+		'&.MuiPaper-root, & .MuiCard-root': {
+			backgroundColor: '#F2F5F8',
+			borderRadius: '8px',
+		},
 	},
 
 	cardContent: {
