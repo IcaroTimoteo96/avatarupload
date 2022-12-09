@@ -1,10 +1,10 @@
-import { Box, Card, CardContent, Container, Typography } from '@mui/material'
+import { Card, Container, Typography } from '@mui/material'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import icon from '../../assets/icon.svg'
 import { AvatarRoute } from '../../routes/Routes/AvatarRoutes'
-import { CropAvatar } from '../CropAvatar/CropAvatar'
+import { DropDragContent } from '../DropDragContent/DropDragContent'
 import { useStyles } from './AvatarUpload.style'
 
 export enum FileEnum {
@@ -78,17 +78,11 @@ export const AvatarUpload = () => {
 			>
 				<label className={styles.label}>
 					{handleInputElement()}
-					<CardContent className={styles.cardContent}>
-						<Box className={styles.box}>
-							<img src={icon} className={styles.icon} alt='icon' />
-							<Typography className={styles.organizationLogoTypography}>
-								Organization Logo
-							</Typography>
-						</Box>
-						<Typography className={styles.dropImageTypography}>
-							Drop the image here or click to browse.
-						</Typography>
-					</CardContent>
+					<DropDragContent
+						title='Organization Logo'
+						subtitle='Drop the image here or click to browse.'
+						icon={icon}
+					/>
 				</label>
 			</Card>
 		</Container>
