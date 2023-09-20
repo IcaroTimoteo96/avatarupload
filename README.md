@@ -1,5 +1,5 @@
 # Resume
 Drag and Drop image in ReactJs;
-This project was challenge requested for a company;
+This project (INCOMPLETE) was challenge requested for a company;
 
 
